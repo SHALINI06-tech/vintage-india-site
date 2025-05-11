@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage India</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0 auto;
+    }
+
+    .menu-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-container input {
+      padding: 5px;
+      font-size: 0.9em;
+    }
+
+    .gallery, .collection, .heritage, .packaging {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .gallery img, .collection img, .heritage img, .packaging img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .description, .legacy {
+      text-align: center;
+      padding: 0 20px;
+      font-style: italic;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .footer {
+      background: #f3f3f3;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.9em;
+    }
+
+    .footer .left-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .footer .footer-links {
+      display: flex;
+      gap: 40px;
+    }
+
+    .footer .footer-icons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .footer .footer-icons a {
+      color: #000;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+
+    .footer .newsletter {
+      margin-top: 10px;
+    }
+
+    .footer input[type=email] {
+      padding: 8px;
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    .footer button {
+      padding: 8px 15px;
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .country-region {
+      text-align: right;
+      font-size: 0.9em;
+      align-self: flex-end;
+    }
+
+    @media (max-width: 600px) {
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer .footer-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer .footer-icons {
+        justify-content: center;
+      }
+
+      .country-region {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>☰</div>                              
+  <h1>Vintage india</h1>
+  <div class="menu-icons">
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div>👤</div>
+  </div>
+</header>
+
+<section class="gallery">
+  <img src="https://private-user-images.githubusercontent.com/191480352/442477687-fe3ff4b9-6e29-4584-9ce2-ac969ecf5ba2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY5NDE5MjcsIm5iZiI6MTc0Njk0MTYyNywicGF0aCI6Ii8xOTE0ODAzNTIvNDQyNDc3Njg3LWZlM2ZmNGI5LTZlMjktNDU4NC05Y2UyLWFjOTY5ZWNmNWJhMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxMVQwNTMzNDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mOGZhOGUyZmQ5Njc0Mzk5ZmI4ODlhMTg4ODRkNTdjZTYzZjQyYmM1ZTI1MjExYzRjYTY2YjViZTY4YzgwZjdlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.nnVfLn8QwmRZMYEg3c0Yrrv_DafwrFMbxxcBSxpeTEM" alt="Shoe">
+  <img src="https://private-user-images.githubusercontent.com/191480352/442477750-2a4d3acb-1fa4-487a-a14c-836d15a4dfec.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY5NDE5MjcsIm5iZiI6MTc0Njk0MTYyNywicGF0aCI6Ii8xOTE0ODAzNTIvNDQyNDc3NzUwLTJhNGQzYWNiLTFmYTQtNDg3YS1hMTRjLTgzNmQxNWE0ZGZlYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxMVQwNTMzNDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01Y2U1NWE1MGZmN2M1MmQyZWQyOGQ3OTJlZTc4N2ZkNWFmOWFhMmEwZDU1MjExOGQ5MzRlN2NmMzkzMDFmMDQxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.siMo3z8cD2drytSV4-Jf9se39lPtQ87A5GcMcyjPWAk" alt="Temple Model">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/191480352/442477795-a31459c3-f04b-4913-88fb-67c8a65953aa.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250511T053532Z&X-Amz-Expires=300&X-Amz-Signature=561497a22d3c8611776b8ecc0f32579823b2e50f152e86533c1b68aa459ed2fa&X-Amz-SignedHeaders=host" alt="Window Model">
+</section>
+
+<p class="description">
+  In a plural dialogue between the body and clothing, the VINTAGE INDIA Fall 2025 collection highlights emblematic pieces of fashion cultures, revisited in a resolutely modern wardrobe. A creative odyssey.
+</p>
+
+<section class="collection">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/191480352/442477817-5c89b186-badc-40e4-94e7-7d9253df842a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250511T054110Z&X-Amz-Expires=300&X-Amz-Signature=301fcc55243fc3927061a90ea97ff22712f373c0e2e268a0053efa437a06ef29&X-Amz-SignedHeaders=host" alt="Group Collection">
+</section>
+
+<section class="legacy">
+  <div class="section-title">VINTAGE INDIA</div>
+  <p>
+    Whispers of heritage, grace, and timeless beauty — the Vintage India collection revives the elegance of a bygone era with silhouettes that tell stories. Reimagined for the modern muse, each piece is steeped in culture, radiating nostalgia and charm.
+  </p>
+  <a href="#">Discover the Legacy</a>
+</section>
+
+<section class="heritage">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/191480352/442477842-b44b94d7-56c0-4c14-a583-0de2b953c6e2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250511T054142Z&X-Amz-Expires=300&X-Amz-Signature=5d31e8c03b6f5a7f250f6ddaac620114db6ee9b0e6d90faf2e2d165efdc2fec2&X-Amz-SignedHeaders=host" alt="Ready-to-wear">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/191480352/442477887-cb13eae4-f7d8-4120-90fc-942f569f0d28.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250511T053944Z&X-Amz-Expires=300&X-Amz-Signature=09fea86536ac2dff3004e652c8975f6a319ad1e62b3a9844bf7d6a47353f2a89&X-Amz-SignedHeaders=host" alt="Revisited Heritage">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/191480352/442477903-64ed21a4-5eef-4d5d-83b5-7f4592e0f0ba.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250511T054008Z&X-Amz-Expires=300&X-Amz-Signature=0aab1782136d61d9764f3fd75439e21085f0cab0fd01986f3ae3529ea3f5932a&X-Amz-SignedHeaders=host" alt="Shop">
+</section>
+
+<section class="packaging">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/191480352/442478516-89ef7002-5263-42a4-a3e4-0250342779ea.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250511T054321Z&X-Amz-Expires=300&X-Amz-Signature=7e0b6dab9258c8ffab988cb80ca2e4ba02448326632cbeade12c800dfe5c1b30&X-Amz-SignedHeaders=host" alt="Packaging">
+</section>
+
+<div class="footer">
+  <div class="left-section">
+    <div class="newsletter">
+      <label>Inspire me with all the latest news</label><br>
+      <input type="email" placeholder="*E-mail">
+      <button>Confirm</button>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Client Services</h4>
+        <a href="#">FAQ</a><br>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Legal Terms</h4>
+        <a href="#">Privacy Notice</a><br>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+
+    <div class="footer-icons">
+      <p><i>Follow Us</i></p>
+      <p><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></p>
+      <p><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></p>
+      <P><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></p>
+   <p> <a href="https://www.tiktok.com" ><i class="fab fa-tiktok"></i></a></p>
+   <p> <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a></p>
+    <p><a href="https://www.snapchat.com" ><i class="fab fa-snapchat"></i></a></p>
+   <p> <a href="https://www.linkedin.com" ><i class="fab fa-linkedin"></i></a></p>
+   <p> <a href="#"><i class="fas fa-podcast"></i></a></p>
+    </div>
+  </div>
+
+  <div class="country-region">
+    <p>Country/Region: India</p>
+  </div>
+</div>
+
+</body>
+</html>
